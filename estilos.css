@@ -1,0 +1,41 @@
+.titulo{
+    width: 100%;
+    height: 5%;
+    background-color: rgb(28, 28, 28);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo h1{
+    color: white;
+}
+
+.navegacion{
+    width: 40%;
+    background-color: white;
+    margin: .5%;
+    border: 1px solid grey;
+    border-radius:10px;
+    padding: 0.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.navegacion a{
+    text-decoration: none;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner{
+    width: 100%;
+    height: 60vh;
+    
+}
