@@ -10,6 +10,7 @@
 
 header{
     color: white;
+    width: 100%;
 }
 
 
@@ -20,6 +21,12 @@ header{
     justify-content: center;
     align-items: center;
 }
+
+.menu{
+    
+    width: 100%;
+}
+
 
 .lateral a{
     text-decoration: none;
@@ -58,7 +65,12 @@ header{
     align-items: center;
 }
 
-
+main{
+    width: 100%;
+}
+section{
+    width: 100%;
+}
 .espaciado{
     padding-left: 5px;
     
@@ -66,7 +78,7 @@ header{
 
 .contenido{
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     justify-content: center;
     align-items: center;
 }
@@ -82,7 +94,7 @@ header{
 
     .contenido{
         
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         
     }
 }
