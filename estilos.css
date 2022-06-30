@@ -28,12 +28,7 @@ header{
 }
 
 
-.lateral a{
-    text-decoration: none;
-    color: white;
-    font-size: 8px;
-    
-}
+
 .lateral{
     width:35%;
     display: flex;
@@ -76,15 +71,28 @@ section{
     
 }
 
-.contenido{
-    display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    justify-content: center;
-    align-items: center;
-}
+
 
 /* Resposive desing */
-@media (min-width: 500px) {
+@media  (max-width: 600px) {
+    .lateral a{
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+        
+    }
+
+    .contenido{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
     .lateral a{
         text-decoration: none;
         color: white;
@@ -93,13 +101,51 @@ section{
     }
 
     .contenido{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr;
+        align-self: center;
+        justify-items: center;
         
+        width: 100%;
+    }
+    
+        
+    
+}
+
+@media (min-width: 1201px)  and (max-width: 1500px){
+    .contenido{
+        display: grid;
         grid-template-columns: repeat(4, 1fr);
         
+        justify-content: center;
+        align-items: center;
+    }
+    .lateral a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        
     }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 1501px)  {
+    .contenido{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        
+        justify-content: center;
+        align-items: center;
+    }
+    .lateral a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        
+    }
+}
+/* @media (max-width: 800px) {
     .lateral a{
         text-decoration: none;
         color: white;
@@ -109,7 +155,7 @@ section{
 
     .contenido{
         
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         
     }
-}
+} */
